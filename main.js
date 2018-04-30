@@ -23,50 +23,72 @@ techniques may conflict with each other.
    
     
 // 2. Hide all of the paragraphs on the index.html page.
-
+//$('p').hide();
 
     
     
     
 // 3. Hide all of the h2's on the page.
-
+//$('h2').hide();
 
     
 
 
 // 4. Hide all images on the page.
-  
+//  $('img').hide();
 	
 	
 	
 	
 // 5. Hide all links on the page.
-
+//$('a').hide();
     
 	
 	
 	
 // 6. Hide all of the elements in the document.
-
+//$('body').hide();
     
     
  
  
 // 7. Hide all paragraphs when one of them is clicked.
-
+/*$(document).ready(function(){
+    $('p').click(function(){
+        $('p').hide();
+    });
+})*/
 
 
 
     
 // 8. Hide all images when one of them is clicked.
-
+/*$(document).ready(function(){
+    $('img').click(function(){
+        $('img').hide();
+    })
+})*/
 
 
 
 
 // 9. When the user clicks onto the image, toggle the paragraphs between hide and show.  
-
- 
+/*$(document).ready(function(){
+    $('img').click(function(){
+        $('p').hide();
+    })
+    $('img').dblclick(function(){
+        $('p').show();
+    })
+})*/
+ $(document).ready(function(){
+     $('img').mousedown(function(){
+         $('p').hide();
+     })
+     $('img').mouseup(function(){
+        $('p').show();
+    })
+ })
  
  
  
